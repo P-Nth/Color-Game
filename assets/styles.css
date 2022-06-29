@@ -62,7 +62,7 @@ header .nav img:hover {
   align-self: center;
   padding: 0.5em 1em;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(213, 213, 213);
   color: rgb(0, 199, 0);
 }
 .guess #loose {
@@ -71,7 +71,7 @@ header .nav img:hover {
   align-self: center;
   padding: 0.5em 1em;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(213, 213, 213);
   color: rgb(255, 0, 0);
 }
 .guess p {
