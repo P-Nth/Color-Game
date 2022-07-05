@@ -9,14 +9,14 @@
     <title>Color Game</title>
   </head>
   <body>
-    <header>
+    <header class="largescreen">
       <div class="logo">
         <p>Color Game</p>
       </div>
       <div class="empty"></div>
       <div class="nav">
         <button id="toggler" onclick="mapColors(), displayRandom()">
-          Toggle Colors
+          Start Game
         </button>
         <a href="https://bit.ly/3GUBlH8"
           ><img src="./assets/images/twitter.png" alt="twitter icon"
@@ -26,8 +26,26 @@
         /></a>
       </div>
     </header>
+    <header class="smallscreen">
+      <div class="logo">
+        <p>Color Game</p>
+      </div>
+      <div class="empty"></div>
+      <div class="nav">
+        <button id="toggler" onclick="mapColors(), displayRandom()">
+          Start Game
+        </button>
+        <div class="links">
+          <a href="https://bit.ly/3GUBlH8"
+            ><img src="./assets/images/twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://bit.ly/3NWp9bb"
+            ><img src="./assets/images/linkedin.png" alt="linkedin icon"
+          /></a>
+        </div>
+      </div>
+    </header>
     <div class="guess">
-      <p id="win"></p>
       <div>
         <p>
           Guess The Color Based On The RGB Below. See How Well You Know Colors
@@ -36,9 +54,9 @@
           <p id="colorcode">RGB</p>
         </div>
       </div>
-      <p id="loose"></p>
     </div>
     <main class="colordisplay">
+      <div id="winchapel"></div>
       <div class="autocolor"></div>
     </main>
     <!-- <div class="win_count">

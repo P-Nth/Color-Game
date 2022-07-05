@@ -36,9 +36,10 @@ function mapColors() {
       correctColor();
     } else {
       this.style.visibility = "hidden";
-      document.getElementById("win").style.visibility = "hidden";
+      document.getElementById(
+        "winchapel"
+      ).innerHTML = `<p id="loose">Try Again mate!</p>`;
       document.getElementById("loose").style.visibility = "visible";
-      document.getElementById("loose").innerHTML = "Please Try Again!";
     }
   });
 }
@@ -59,8 +60,9 @@ function correctColor() {
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].style.backgroundColor = bgColor;
     boxes[i].style.visibility = "visible";
-    document.getElementById("win").innerHTML = "Impressive!";
+    document.getElementById(
+      "winchapel"
+    ).innerHTML = `<p id="win">Impressive</p>`;
     document.getElementById("win").style.visibility = "visible";
-    document.getElementById("loose").style.visibility = "hidden";
   }
 }
