@@ -178,6 +178,11 @@ header .nav img:hover {
     cursor: pointer;
     transition: 0.25s ease-in-out;
   }
+  .guess {
+    display: grid;
+    justify-content: center;
+    margin: 3em 0 0 0;
+  }
 }
 
 @media all and (min-width: 1200px) {
